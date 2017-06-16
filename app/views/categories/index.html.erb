@@ -4,6 +4,5 @@
 <%= link_to "Add New Category", new_category_path %>
 
 <% @categories.each do |categorie| %>
-<h4><%= categorie.name %>  <small><%= link_to "Delete", categories_path(@categories), method: :delete %></small></h4>
+<h4><%= categorie.name %> </h4>
 <% end %>
-
