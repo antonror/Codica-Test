@@ -11,9 +11,10 @@
     <% end %>
 
     <%= select_tag(:category_id, options_for_select(@categories), :prompt=> "Select Category")  %>
+    <%= f.file_field :book_img %>
     <%= f.input :title, label: "Book Title" %>
     <%= f.input :description %>
     <%= f.input :author %>
-    <%= f.button :submit %>
+    <%= f.button :submit, :class => 'btn-custom2' %>
 
 <% end %>
