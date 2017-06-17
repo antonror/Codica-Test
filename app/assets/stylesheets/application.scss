@@ -33,10 +33,34 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
+
 }
 
 p.alert, p.notice {
   margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  -moz-animation: cssAnimation 0s ease-in 3s forwards;
+  -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+  -o-animation: cssAnimation 0s ease-in 3s forwards;
+  animation: cssAnimation 0s ease-in 3s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+  to {
+    width:0;
+    height:0;
+    overflow:hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+    width:0;
+    height:0;
+    visibility:hidden;
+  }
 }
 
 .navbar {

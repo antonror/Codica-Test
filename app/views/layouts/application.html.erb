@@ -30,6 +30,8 @@
            <ul class="dropdown-menu" role="menu">
              <% if user_signed_in? %>
              <li role="presentation"><%= link_to "Manage", categories_path %></li>
+                 <% else %>
+                 <li role="presentation"><%= link_to "Add new", new_user_registration_path %></li>
              <% end %>
              <% Category.all.each do |category| %>
                  <li class="<%= 'active' if params[:category] == category.name %>">
