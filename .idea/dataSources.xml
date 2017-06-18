@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="73209936">
+  <component name="DataSourceManagerImpl" format="xml" hash="3306993602">
     <data-source source="LOCAL" name="Rails untitled: development" uuid="35615427-4adb-4e35-8c12-4175b26631ee">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/xerial-sqlite-license.txt</url>
-        </library>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/sqlite-jdbc-3.16.1.jar</url>
-        </library>
-      </libraries>
+      <jdbc-url>jdbc:postgresql:codicadev</jdbc-url>
+      <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails untitled: test" uuid="a60a9953-9304-49c4-9334-5f32afa904d7">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/xerial-sqlite-license.txt</url>
-        </library>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/sqlite-jdbc-3.16.1.jar</url>
-        </library>
-      </libraries>
+      <jdbc-url>jdbc:postgresql:codicatest</jdbc-url>
+      <libraries />
     </data-source>
   </component>
 </project>
