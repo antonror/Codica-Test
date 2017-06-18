@@ -4,6 +4,7 @@ ruby '2.3.0'
 
 gem 'rails', '4.2.1'
 gem 'rails_12factor'
+gem 'paperclip-cloudinary'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form', '~> 3.1.0'
