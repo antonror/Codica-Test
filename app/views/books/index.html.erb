@@ -1,5 +1,6 @@
 <head>
 <h1 class="current-category"><%= params[:category] %></h1>
+
     <% if @books.count == 0 %>
      <h1>There are no books here</h1>
         <% else %>
@@ -12,3 +13,4 @@
     </div>
     <% end %>
 </head>
+
