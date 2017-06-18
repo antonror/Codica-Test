@@ -3,7 +3,7 @@
     <h1>New Category</h1>
 <%= simple_form_for @categories do |f| %>
     <%= f.input :name, label: "Category Name" %>
-    <%= f.button :submit, :class => "btn-custom2" %>
+    <%= f.button :submit, data:{ disable_with: 'Saving' }, :class => "btn-custom2" %>
 <% end %>
   </div>
 </div>
