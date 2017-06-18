@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b491d48-e24f-4b22-b5a0-45c1e28c5851" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
@@ -553,7 +552,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497744218482</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Improved: Signup button removed on current user session">
+      <created>1497746838026</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1497746838026</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -617,7 +622,8 @@
     <MESSAGE value="Final: Ready fot Heroku Deploy" />
     <MESSAGE value="Final: POSTGRESQL Ready fot Heroku Deploy" />
     <MESSAGE value="Improved: 'rails_12factor'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved: 'rails_12factor'" />
+    <MESSAGE value="Improved: Signup button removed on current user session" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved: Signup button removed on current user session" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
