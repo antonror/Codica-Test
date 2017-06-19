@@ -1,11 +1,8 @@
 class CategoriesController < ApplicationController
-  before_action :find_book, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:new, :edit]
-
+  before_action :find_category, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
   def index
-    if params[:name].blank?
-    @categories = Category.all.order("name ASC")
-      end
+      @categories = Category.all.order("name ASC")
   end
 
   def new
@@ -16,6 +13,11 @@ class CategoriesController < ApplicationController
   end
 
   def update
+    if @categories.update(category_params)
+      redirect_to categories_path
+    else
+      render 'edit'
+    end
   end
 
   def create
@@ -30,15 +32,16 @@ class CategoriesController < ApplicationController
 
   def destroy
     @categories.destroy
-    redirect to categories_url
+    redirect_to categories_path
   end
 
-private
+  private
 
   def category_params
     params.require(:category).permit(:name)
   end
 
-
+  def find_category
+  @categories = Category.find(params[:id])
+    end
 end
-
